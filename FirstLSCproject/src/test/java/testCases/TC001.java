@@ -21,9 +21,7 @@ public class TC001 extends Browser
 	
 	Login sin= new Login();
   	sin.signIn("http://52.27.143.120:8000", "pradeep.kumar@smartdatainc.net", "Password@123");
-  	
-  	
-//  driver1.click(AgencyLogin.doctot);
+//  	driver1.click(AgencyLogin.doctot);
 }
 }
 
