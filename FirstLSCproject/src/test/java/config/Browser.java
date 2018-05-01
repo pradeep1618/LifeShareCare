@@ -87,8 +87,8 @@ public class Browser {
   @AfterClass
   public void quite() throws Exception
   {
-	  Login sin= new Login();
-	  sin.signout();
+	 /* Login sin= new Login();
+	  sin.signout();*/
 	  extent.flush();
 	  driver.quit();
   }
