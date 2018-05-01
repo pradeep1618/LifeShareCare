@@ -1,39 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Pradeep Test suite" duration-ms="79424" started-at="2018-04-30T13:08:34Z" finished-at="2018-04-30T13:09:54Z">
+  <suite name="Default suite" duration-ms="91730" started-at="2018-05-01T08:06:24Z" finished-at="2018-05-01T08:07:56Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="79424" started-at="2018-04-30T13:08:34Z" finished-at="2018-04-30T13:09:54Z">
+    <test name="Default test" duration-ms="91730" started-at="2018-05-01T08:06:24Z" finished-at="2018-05-01T08:07:56Z">
       <class name="testCases.TC001">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testCases.TC001@4a87761d]" name="beforeClass" is-config="true" duration-ms="3644" started-at="2018-04-30T13:08:34Z" finished-at="2018-04-30T13:08:38Z">
+        <test-method status="PASS" signature="repos()[pri:0, instance:testCases.TC001@65e98b1c]" name="repos" is-config="true" duration-ms="162" started-at="2018-05-01T08:06:24Z" finished-at="2018-05-01T08:06:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- repos -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testCases.TC001@65e98b1c]" name="beforeClass" is-config="true" duration-ms="3657" started-at="2018-05-01T08:06:24Z" finished-at="2018-05-01T08:06:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="Loginto()[pri:0, instance:testCases.TC001@4a87761d]" name="Loginto" duration-ms="34501" started-at="2018-04-30T13:08:38Z" finished-at="2018-04-30T13:09:12Z">
+        <test-method status="PASS" signature="Loginto()[pri:0, instance:testCases.TC001@65e98b1c]" name="Loginto" duration-ms="35406" started-at="2018-05-01T08:06:28Z" finished-at="2018-05-01T08:07:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Loginto -->
-        <test-method status="PASS" signature="quite()[pri:0, instance:testCases.TC001@4a87761d]" name="quite" is-config="true" duration-ms="606" started-at="2018-04-30T13:09:13Z" finished-at="2018-04-30T13:09:13Z">
+        <test-method status="PASS" signature="result(org.testng.ITestResult)[pri:0, instance:testCases.TC001@65e98b1c]" name="result" is-config="true" duration-ms="12" started-at="2018-05-01T08:07:03Z" finished-at="2018-05-01T08:07:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Loginto status=SUCCESS method=TC001.Loginto()[pri:0, instance:testCases.TC001@65e98b1c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- result -->
+        <test-method status="PASS" signature="quite()[pri:0, instance:testCases.TC001@65e98b1c]" name="quite" is-config="true" duration-ms="52618" started-at="2018-05-01T08:07:03Z" finished-at="2018-05-01T08:07:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quite -->
       </class> <!-- testCases.TC001 -->
-      <class name="testCases.TC002">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testCases.TC002@66d1af89]" name="beforeClass" is-config="true" duration-ms="3062" started-at="2018-04-30T13:09:13Z" finished-at="2018-04-30T13:09:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="createDoctor()[pri:0, instance:testCases.TC002@66d1af89]" name="createDoctor" duration-ms="36223" started-at="2018-04-30T13:09:17Z" finished-at="2018-04-30T13:09:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createDoctor -->
-        <test-method status="PASS" signature="quite()[pri:0, instance:testCases.TC002@66d1af89]" name="quite" is-config="true" duration-ms="605" started-at="2018-04-30T13:09:53Z" finished-at="2018-04-30T13:09:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quite -->
-      </class> <!-- testCases.TC002 -->
     </test> <!-- Default test -->
-  </suite> <!-- Pradeep Test suite -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -16,6 +16,8 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+import commonFun.Login;
+
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -75,7 +77,7 @@ public class Browser {
   @BeforeClass
   public void beforeClass() 
   {
-	  System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+ "/Drives/chromedriver.exe"); 
+	 System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+ "/Drivers/chromedriver.exe"); 
 	driver=new ChromeDriver();
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	driver.manage().window().maximize();
@@ -83,8 +85,10 @@ public class Browser {
   }
   
   @AfterClass
-  public void quite()
+  public void quite() throws Exception
   {
+	  Login sin= new Login();
+	  sin.signout();
 	  extent.flush();
 	  driver.quit();
   }

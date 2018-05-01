@@ -52,7 +52,13 @@ public class Login extends Browser
 		  
 	}
 	
-	
+	public void signout() throws Exception
+	{
+		ActionDriver driver1 = new ActionDriver();
+		driver1.waitForLoad(driver);
+		Thread.sleep(800);
+		driver1.click(AgencyLogin.sigouts);
+	}
 	
 
 }

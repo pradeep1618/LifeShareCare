@@ -2,12 +2,15 @@ package customAct;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import config.Browser;
 
@@ -131,6 +134,21 @@ public class ActionDriver {
 		String s = RandomStringUtils.random(10, alphabet);
 	}
 	
+	/**
+	 * Waits until the pageloads
+	 */
+	 public void waitForLoad(WebDriver driver) {
+	        ExpectedCondition<Boolean> pageLoadCondition = new
+	                ExpectedCondition<Boolean>() {
+	                    public Boolean apply(WebDriver driver) {
+	                        return ((JavascriptExecutor)driver).executeScript("return document.readyState").equals("Complete");
+	                    }
+	                };
+	        WebDriverWait wait = new WebDriverWait(driver, 30);
+	        wait.until(pageLoadCondition);
+	    }
+	}
 	
 	
-}
+	
+

@@ -20,11 +20,11 @@ public class AgencyLogin
 	
 	public static By doctot = By.xpath("//div[@class='tab-pane tab-pane-aides active']");
 	
-	public static By aid = By.xpath("//div//a[@href='#help_elderly']");  //div[@class='tab-pane tab-pane-aides active']//child::
+	public static By aid = By.xpath("//i[@class='fa flaticon-help-the-elderly']");  //div[@class='tab-pane tab-pane-aides active']//child::
 	
 	public static By helpTogg = By.xpath("//div[@id='nzTour-content']");
 	
-	public static By careplan = By.xpath("//a[contains(.,'care plan')]");
+	public static By sigouts = By.xpath("//div[@class='headericon-box'][2]");
 	
 }
 	
